@@ -39,15 +39,18 @@ span {
 }
 
 button {
-    background-color: #1B244A;
+    background-color: #324376;
     font-family: "CursedTimer";
     height: 45px;
     width: 45px;
     border-radius: 5px;
     border: 2px solid #9AABD8;
-    color: #9AABD8;
+    color: white;
 }
 
+button:hover {
+    background-color: #3E4F8A;
+}
 
 .score {
     font-family: "CursedTimer";
@@ -62,6 +65,25 @@ button {
     border-radius: 5px;
     border: 1px solid white;
     padding: 20px 0 0 0;
+}
+
+#reset-scores-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset-scores-btn {
+    width: 100px;
+    border: 2px solid #D97D78;
+    background-color: #A63D40;
+    color: white;
+    padding: 3px 0 0 0;
+}
+
+#reset-scores-btn:hover {
+    background-color: #8E2F2F;
+    border-color: #C46A66;
 }
 
 #period-container {
@@ -95,6 +117,10 @@ button {
     color: #9AABD8;
 }
 
+.increment-btn:hover {
+    background-color: #1B244A;
+}
+
 .decrement-btn {
     border: none;
     background-color: #1B244A;
@@ -103,6 +129,10 @@ button {
     height: 25px;
     border-radius: 5px;
     color: #9AABD8;
+}
+
+.decrement-btn:hover {
+    background-color: #1B244A;
 }
 
 #foul-container{
