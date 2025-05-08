@@ -74,15 +74,16 @@ button {
 #current-period {
     font-family: "CursedTimer";
     display: flex;
-    justify-content: space-around;
-    height: 50px;
+    justify-content: center;
+    height: 60px;
     width: 40px;
     background-color: black;
     color: yellow;
     align-items: center;
-    font-size: 60px;
+    font-size: 50px;
     border-radius: 5px;
-    padding: 15px 0 0 0;
+    padding: 12px 0 0 0;
+    margin: 6px 0 0 0;
 }
 
 .increment-btn {
