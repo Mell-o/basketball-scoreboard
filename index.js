@@ -73,4 +73,7 @@ function decrementGuestFoulBy1() {
     guestFoulEl.textContent = guestFoulCount
 }
 
-
+function resetScores() {
+    homeScore = 0
+    homeScoreEl.textContent = homeScore
+}
