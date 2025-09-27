@@ -77,5 +77,5 @@ function resetScores() {
     homeScore = 0
     homeScoreEl.textContent = homeScore
     guestScore = 0
-    guestScoreEl = guestScore
+    guestScoreEl.textContent = guestScore
 }
