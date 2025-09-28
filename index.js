@@ -44,8 +44,10 @@ function incrementGuestBy3() {
 }
 
 function incrementPeriodBy1() {
-    currentPeriod = currentPeriod + 1
-    currentPeriodEl.textContent = currentPeriod
+    if (currentPeriod < 4) {
+        currentPeriod = currentPeriod + 1
+        currentPeriodEl.textContent = currentPeriod
+    }
 }
 
 function decrementPeriodBy1() {
