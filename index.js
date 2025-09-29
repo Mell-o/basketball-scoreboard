@@ -13,6 +13,8 @@ let homeFoulCount = 0
 let guestFoulEl = document.getElementById("guest-foul-score")
 let guestFoulCount = 0
 
+const greaterThanZero = value => value > 0
+
 function incrementHomeBy1() {
     homeScore = homeScore + 1
     homeScoreEl.textContent = homeScore
@@ -51,7 +53,7 @@ function incrementPeriodBy1() {
 }
 
 function decrementPeriodBy1() {
-    if (currentPeriod > 0) {
+    if (greaterThanZero(currentPeriod)) {
         currentPeriod = currentPeriod - 1
         currentPeriodEl.textContent = currentPeriod
     }
