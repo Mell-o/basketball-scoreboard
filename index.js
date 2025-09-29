@@ -51,7 +51,7 @@ function incrementPeriodBy1() {
 }
 
 function decrementPeriodBy1() {
-    if (currentPeriod < 0) {
+    if (currentPeriod > 0) {
         currentPeriod = currentPeriod - 1
         currentPeriodEl.textContent = currentPeriod
     }
