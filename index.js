@@ -51,8 +51,10 @@ function incrementPeriodBy1() {
 }
 
 function decrementPeriodBy1() {
-    currentPeriod = currentPeriod - 1
-    currentPeriodEl.textContent = currentPeriod
+    if (currentPeriod < 0) {
+        currentPeriod = currentPeriod - 1
+        currentPeriodEl.textContent = currentPeriod
+    }
 }
 
 function incrementHomeFoulBy1() {
