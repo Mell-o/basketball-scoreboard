@@ -65,8 +65,10 @@ function incrementHomeFoulBy1() {
 }
 
 function decrementHomeFoulBy1() {
-    homeFoulCount = homeFoulCount - 1
-    homeFoulEl.textContent = homeFoulCount
+    if (greaterThanZero(homeFoulCount)) {
+        homeFoulCount = homeFoulCount - 1
+        homeFoulEl.textContent = homeFoulCount
+    }
 }
 
 function incrementGuestFoulBy1() {
@@ -75,8 +77,10 @@ function incrementGuestFoulBy1() {
 }
 
 function decrementGuestFoulBy1() {
-    guestFoulCount = guestFoulCount - 1
-    guestFoulEl.textContent = guestFoulCount
+    if (greaterThanZero(guestFoulCount)) {
+        guestFoulCount = guestFoulCount - 1
+        guestFoulEl.textContent = guestFoulCount
+    }
 }
 
 function resetScores() {
